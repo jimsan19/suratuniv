@@ -6,7 +6,7 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
 
 if (isset($_GET['idsuratt'])) {
       $idsuratt    = $_GET['idsuratt'];
-      $query = mysqli_query($con, "SELECT * FROM surattugas k, dosen s where s.iddosen =k.iddosen and idsuratt=" . $idsuratt);
+      $query = mysqli_query($con, "SELECT * FROM surattugas k, dosen s where s.nip =k.iddosen and idsuratt=" . $idsuratt);
       $no = 1;
       $result    = mysqli_fetch_array($query); {
       }
@@ -25,10 +25,9 @@ if (isset($_GET['idsuratt'])) {
                         <tr>
 
                               <td colspan="3">
-                                    <img src="img/usnlogo.png" alt="" style="width: 10%; float: left;
- ">
-                                    <div align="center">
 
+                                    <img src="img/usnlogo.png" alt="" style="width: 10%; float: left; ">
+                                    <div align="center">
                                           <span style="font-family: Verdana; font-size: 14pt;">KEMENTRIAN PENDIDIKAN, KEBUDAYAAN, RISET DAN TEKNOLOGI</span><br>
 
                                           <span style="font-family: Verdana; font-size: 14pt;">UNIVERSITAS SEMBILANBELAS NOVEMBER KOLAKA</span><br>
@@ -83,8 +82,9 @@ if (isset($_GET['idsuratt'])) {
                         <tr>
                               <td colspan="3" height="270" valign="top">
                                     <div align="justify">
-                                          <pre><span style="font-size: 12pt;">Dekan fakultas Teknologi Informasi Universitas Sembilanbelas November Kolaka Menugaskan Kepada :</span></pre>
-                                          <table border="0" style="width: 352px;">
+                                          <span style="font-size: 12pt;">Dekan fakultas Teknologi Informasi Universitas Sembilanbelas November Kolaka Menugaskan Kepada:</span>
+                                          <br>
+                                          <table border="0" style="width: 100%;">
                                                 <tbody>
                                                       <tr>
                                                             <td width="80"><span style="font-size: 12pt;">Nama </span></td>
@@ -110,7 +110,7 @@ if (isset($_GET['idsuratt'])) {
                                           </table>
                                           <div align="justify">
                                                 <span style="font-size: 12pt;">
-
+                                                      <br>
                                                       Demikian surat tugas ini dibuat untuk dilaksanakan dengan penuh tanggaung jawab.</span>
                                           </div>
                                     </div>
@@ -120,19 +120,8 @@ if (isset($_GET['idsuratt'])) {
                               </td>
                         </tr>
                         <tr>
-                              <td>
 
-                                    <span style="font-size: 12pt;">Tembusan :</span></div>
-                                    <div align="center">
 
-                                    </div>
-
-                                    <span style="font-size: 12pt;">1. Wakil Rektor Bidang Akademik </span></div><br>
-                                    <span style="font-size: 12pt;">2. Wakil Rektor Bidang Umum dan Kepegawaian </span></div><br>
-                                    <span style="font-size: 12pt;">3. Subkoordinatoe Kepegawaian </span></div><br>
-                                    <span style="font-size: 12pt;">4. Arsip </span></div>
-
-                              </td>
                               <td></td>
                               <td valign="top">
                                     <div align="center">
@@ -151,6 +140,21 @@ if (isset($_GET['idsuratt'])) {
                                     <div align="center">
                                           <span style="font-size: 12pt;">NIPPPK 197806252021212007</span>
                                     </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+
+                                    <span style="font-size: x-12pt;">Tembusan :</span></div>
+                                    <div align="center">
+
+                                    </div>
+
+                                    <span style="font-size: x-12pt;">1. Wakil Rektor Bidang Akademik </span></div><br>
+                                    <span style="font-size: x-12pt;">2. Wakil Rektor Bidang Umum dan Kepegawaian </span></div><br>
+                                    <span style="font-size: x-12pt;">3. Subkoordinatoe Kepegawaian </span></div><br>
+                                    <span style="font-size: x-12pt;">4. Arsip </span></div>
+
                               </td>
                         </tr>
                   </tbody>

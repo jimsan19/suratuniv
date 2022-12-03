@@ -46,28 +46,28 @@
  ">
                               <div align="center">
 
-                                  <span style="font-family: Verdana; font-size: 12pt;">KEMENTRIAN PENDIDIKAN, KEBUDAYAAN, RISET DAN TEKNOLOGI</span><br>
+                                  <span style="font-family: Verdana; font-size: 12;">KEMENTRIAN PENDIDIKAN, KEBUDAYAAN, RISET DAN TEKNOLOGI</span><br>
 
-                                  <span style="font-family: Verdana; font-size: 12pt;">UNIVERSITAS SEMBILANBELAS NOVEMBER KOLAKA</span><br>
+                                  <span style="font-family: Verdana; font-size: 12px;">UNIVERSITAS SEMBILANBELAS NOVEMBER KOLAKA</span><br>
 
-                                  <span style="font-family: Verdana; font-size: 12pt;"><b>FAKULTAS TEKNOLOGI INFORMASI</b></span> <br>
-                                  <span style="font-family: Verdana; font-size: 12pt;">JalanPemuda No. 339 Telp. (0405) 2321132, Fax. (0405) 23240228 Kolaka 93517</span><br>
-                                  <span style="font-family: Verdana; font-size: 12pt;">Email : <a href="">rektorat@usn.sc.id</a>, laman : http//usn.ac.id</span>
-                                  <hr /><br><br>
+                                  <span style="font-family: Verdana; font-size: 12px;"><b>FAKULTAS TEKNOLOGI INFORMASI</b></span> <br>
+                                  <span style="font-family: Verdana; font-size: x-small;">JalanPemuda No. 339 Telp. (0405) 2321132, Fax. (0405) 23240228 Kolaka 93517</span><br>
+                                  <span style="font-family: Verdana; font-size: x-small;">Email : <a href="">rektorat@usn.sc.id</a>, laman : http//usn.ac.id</span>
+                                  <hr />
                               </div>
                           </td>
                       </tr>
                       <tr>
                           <td colspan="2">
-                              <table border="0" cellpadding="1" style="width: 400px;">
+                              <table border="0" cellpadding="1" style="width: 100%;">
                                   <tbody>
 
                                       <tr>
-                                          <td width="93"><span style="font-size: 12pt;">No</span></td>
-                                          <td width="8"><span style="font-size: 12pt;">:</span></td>
+                                          <td><span style="font-size: x-small;">No</span></td>
+                                          <td><span style="font-size: x-small;">:</span></td>
                                           <td></td>
                                           <td></td>
-                                          <td width="200"><span style="font-size: 12pt;"><?= $result['nocut'] ?></span></td>
+                                          <td><span style="font-size: x-small;"><?= $result['nocut'] ?></span></td>
                                       </tr>
                                       <td></td>
                                       <td></td>
@@ -87,7 +87,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td width="200" class=""><span style="font-size: 12pt;">Yth. Dekan <?= $result['namafak'] ?></td>
+                          <td width="" class=""><span style="font-size: x-small;">Yth. Dekan <?= $result['namafak'] ?></td>
                       </tr>
                       <tr>
                           <td></td>
@@ -99,7 +99,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td width="200"><span style="font-size: 12pt;">di</td>
+                          <td width="200"><span style="font-size: x-small;">di</td>
                       </tr>
                       <tr>
                           <td></td>
@@ -111,7 +111,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td width="200"><span style="font-size: 12pt;">Tempat</td>
+                          <td width="200"><span style="font-size: x-small;">Tempat</td>
                       </tr>
 
                   </tbody>
@@ -277,10 +277,11 @@
                           <td></td>
                           <td valign="top">
                               <div align="center">
-                                  <span style="font-size: 12pt;">Hormat Saya, </span>
+                                  <span style="font-size: x-small;">Hormat Saya, </span>
                               </div><br><br><br>
                               <div align="center">
-                                  <span style="font-size: 12pt;"><?= $result['nama'] ?> </span>
+                                  <span style="font-size: x-small;"><?= $result['nama'] ?> </span><br>
+                                  <span>NIDN. <?= $result['nip'] ?></span>
                               </div>
                           </td>
                       </tr>
@@ -306,14 +307,15 @@
                           <td></td>
                           <td></td>
                           <td valign="top">
+                              <!-- <div align="center">
+                                  <span style="font-size: x-small;">Hormat Saya, </span>
+                              </div> -->
+                              <br><br><br>
                               <div align="center">
-                                  <span style="font-size: 12pt;">Hormat Saya, </span>
-                              </div><br><br><br>
-                              <div align="center">
-                                  <span style="font-size: 12pt;">Anjar Pradipta, S.kom., M.KOM </span>
+                                  <span style="font-size: x-small;">Anjar Pradipta, S.kom., M.KOM </span>
                               </div>
                               <div align="center">
-                                  <span style="font-size: 12pt;">NIP 199407082022031012 </span>
+                                  <span style="font-size: x-small;">NIP 199407082022031012 </span>
                               </div>
                           </td>
                       </tr>
@@ -339,10 +341,10 @@
                           <td></td>
                           <td height="80px" valign="top">
                               <div align="center"><br><br><br><br>
-                                  <span style="font-size: 12pt;">Noorhasanah., Z, S.Si.,M.Eng</span>
+                                  <span style="font-size: x-small;">Noorhasanah., Z, S.Si.,M.Eng</span>
                               </div>
                               <div align="center">
-                                  <span style="font-size: 12pt;">NIPPPK 197806252021212007</span>
+                                  <span style="font-size: x-small;">NIPPPK 197806252021212007</span>
                               </div>
                           </td>
                       </tr>
@@ -351,15 +353,15 @@
                       <tbody>
                           <tr>
                               <td>
-                                  <span style="font-size: 12pt;">Tembusan :</span></div>
+                                  <span style="font-size: x-small;">Tembusan :</span></div>
                                   <div align="left">
 
 
 
-                                      <span style="font-size: 12pt;">1. Wakil Rektor Bidang Akademik </span><br>
-                                      <span style="font-size: 12pt;">2. Wakil Rektor Bidang Umum dan Kepegawaian </span><br>
-                                      <span style="font-size: 12pt;">3. Subkoordinatoe Kepegawaian </span><br>
-                                      <span style="font-size: 12pt;">4. Arsip </span>
+                                      <span style="font-size: x-small;">1. Wakil Rektor Bidang Akademik </span><br>
+                                      <span style="font-size: x-small;">2. Wakil Rektor Bidang Umum dan Kepegawaian </span><br>
+                                      <span style="font-size: x-small;">3. Subkoordinatoe Kepegawaian </span><br>
+                                      <span style="font-size: x-small;">4. Arsip </span>
 
                               </td>
                               </div>

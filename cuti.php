@@ -43,19 +43,19 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
                         </a>
                         <a class="nav-link" href="cuti.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                            Data Surat Cuti
+                            Data Surat Cuti Tahunan
                         </a>
-                        <a class="nav-link" href="cutistaff.php">
+                        <!-- <a class="nav-link" href="cutistaff.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                             Data Surat Cuti Staff
-                        </a>
+                        </a> -->
                         <a class="nav-link" href="sakit.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                             Data Surat Cuti Sakit
                         </a>
                         <a class="nav-link" href="cutialasan.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                            Data Surat Cuti Alasan Lain
+                            Data Surat Cuti Alasan Penting
                         </a>
                         <a class="nav-link" href="dosen.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
@@ -92,7 +92,7 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h1 class="mt-4">Data Surat Cuti </h1>
+                    <h1 class="mt-4">Data Surat Cuti Tahunan</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Selamat Datang</li>
                     </ol>
@@ -107,7 +107,7 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
 
                     <!-- Button to Open the Modal -->
                     <button type="button" class="btn btn-info mb-4" data-toggle="modal" data-target="#myModal">
-                        Tambah Surat Cuti
+                        Tambah Surat Cuti Tahunan
                     </button>
 
 
@@ -116,7 +116,7 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table mr-1"></i>
-                            Daftar Surat Cuti
+                            Daftar Surat Cuti Tahunan
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -226,7 +226,7 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Tambah Surat Cuti</h4>
+                <h4 class="modal-title">Tambah Surat Cuti Tahunan</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -258,9 +258,9 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
                     <input type="text" name="nocut" class="form-control" value="<?php echo $format; ?>" readonly>
 
 
-                    <label for="color">NIP Dosen</label>
+                    <label for="color">NIP </label>
                     <input type="text" onkeyup="isi_otomatis()" name="nip" class="form-control" id="nip">
-                    <label for="">Nama MHS </label>
+                    <label for="">Nama </label>
                     <input type="text" name="nip" class="form-control" id="nama" disabled>
                     <label for="">Jabatan </label>
                     <input type="text" id="jabatan" name="" class="form-control" disabled>
@@ -298,8 +298,8 @@ $con = mysqli_connect('localhost', 'root', '', 'suratuniv');
 
                         ?>
                     </select>
-                    <label for="">Jenis Cuti </label>
-                    <input type="text" name="jeniscuti" class="form-control" placeholder=" Jenis Cuti">
+                    <!-- <label for="">Jenis Cuti </label>
+                    <input type="text" name="jeniscuti" class="form-control" placeholder=" Jenis Cuti"> -->
 
                     <label for="">Tanggal Mulai </label>
                     <input type="date" name="tglmulai" class="form-control">
